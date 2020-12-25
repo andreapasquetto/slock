@@ -1,0 +1,4 @@
+patches/
+slock
+*.o
+*.rej
