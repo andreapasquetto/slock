@@ -16,3 +16,7 @@ A screen locker utility for X written in C.
     ```sh
     make && make clean install
     ```
+
+## Patches
+
+- [capscolor](https://tools.suckless.org/slock/patches/capscolor)
