@@ -1,16 +1,12 @@
-/* user and group to drop privileges to */
-static const char *user  = "nobody";
-static const char *group = "nogroup";
+static const char *user      = "nobody";  // user for dropping privileges
+static const char *group     = "nobody"; // group for dropping privileges
+static const int failonclear = 1;         // cleared input = wrong password color
+static const int monitortime = 300;         // time in seconds before disabling the monitor
 
+// colors
 static const char *colorname[NUMCOLS] = {
-	[INIT] =   "black",     /* after initialization */
-	[INPUT] =  "#005577",   /* during input */
-	[FAILED] = "#CC3333",   /* wrong password */
-	[CAPS] = "red",         /* CapsLock on */
+	[INIT]   = "#000000", // initial status
+	[INPUT]  = "#1976d2", // input
+	[FAILED] = "#b71c1c", // error
+	[CAPS]   = "#fdd835", // XK_Caps_Lock enabled
 };
-
-/* treat a cleared input like a wrong password (color) */
-static const int failonclear = 1;
-
-/* time in seconds before the monitor shuts down */
-static const int monitortime = 5;

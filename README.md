@@ -3,6 +3,8 @@
 
 A screen locker utility for X written in C.
 
+> All settings can be modified in [config.h](./config.h).
+
 ## Installation
 
 1. Clone the repository:
@@ -11,7 +13,9 @@ A screen locker utility for X written in C.
     git clone https://github.com/andreapasquetto/slock.git
     ```
 
-2. Compile and install:
+2. Make changes to the configuration, if necessary
+
+3. Compile and install:
 
     ```sh
     make && make clean install
